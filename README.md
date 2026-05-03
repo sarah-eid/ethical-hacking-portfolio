@@ -27,13 +27,11 @@ ethical-hacking-portfolio/
 ├── README.md
 ├── labs/
 │   ├── lab01-footprinting-google-dorks/
-│   │   └── lab01.md + screenshots/
+│   │   └── lab01.md
 │   ├── lab02-passive-recon-osint/
-│   │   └── lab02.md + screenshots/
+│   │   └── lab02.md 
 │   ├── lab03-active-recon-nmap/
 │   │   └── lab03.md + screenshots/
-│   ├── lab04-vuln-scanning-openvas/
-│   │   └── lab04.md + screenshots/
 │   ├── lab05-social-engineering-set/
 │   │   └── lab05.md + screenshots/
 │   ├── lab06-sql-injection/
