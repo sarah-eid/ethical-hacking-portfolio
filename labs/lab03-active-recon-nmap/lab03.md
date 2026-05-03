@@ -59,7 +59,10 @@ Since the Cisco Ethical Hacker environment includes multiple Docker-based target
 
 List all active IP addresses discovered in the subnet.
 
+![screenshot](./screenshots/Screenshot1.png)
+
 ---
+
 Select one additional active host (other than 10.6.6.23) for scanning in later sections.
 
 Write the selected IP:
@@ -79,6 +82,8 @@ Run:
 └─\$ nmap -sV 10.6.6.23
 
 What ports are open?
+
+![screenshot](./screenshots/Screenshot2.png)
 
 ---
 The open ports detected were 21, 22, 53, 80, 139, and 445.
@@ -163,6 +168,8 @@ Run the vulners script:
 
 └─\$ nmap -sV --script vulners --script-args mincvss=4 10.6.6.23
 
+![screenshot](./screenshots/Screenshot3.png)
+
 ---
 Which service shows known vulnerabilities?
 
@@ -205,6 +212,8 @@ Step 2: Vulnerability Category
 ┌──(kali㉿Kali)-\[~\]
 
 └─\$ sudo nmap --script vuln 10.6.6.23
+
+![screenshot](./screenshots/Screenshot4.png)
 
 ---
 Which vulnerability script provided the most meaningful output?
