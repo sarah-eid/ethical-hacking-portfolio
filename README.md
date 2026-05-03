@@ -79,13 +79,6 @@ ethical-hacking-portfolio/
 
 ---
 
-### Lab 04: Vulnerability Scanning
-**Tool:** OpenVAS via TryHackMe
-
-**Outcome:** Completed full vulnerability scanning room, authenticated scans, report interpretation
-
----
-
 ### Lab 05: Social Engineering with SET
 **Attack:** Website cloning + credential harvesting
 
