@@ -177,7 +177,7 @@ All activities were performed in:
 | Report Writing | ✅ Executive + Technical |
 
 ---
-**Note:** Screenshots are omitted from this public portfolio for ethical reasons. 
+**Note:** Some screenshots are omitted from this public portfolio for ethical reasons. 
 All commands and outputs shown are from authorized lab environments using 
 placeholder/ anonymized data. Screenshots are available upon request.
 
