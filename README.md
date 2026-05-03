@@ -111,7 +111,7 @@ ethical-hacking-portfolio/
 
 ## Final Project: Web Application Penetration Test
 
-**Team:** Sarah Eid, Abeer Hussain, Nancy Elhaddad  
+**Team:** Sarah Eid, [Abeer Hussain](https://github.com/abeerahrar), Nancy Elhaddad  
 **Client:** Simulated company with never-before-tested internal web app
 
 ### Vulnerabilities Discovered
