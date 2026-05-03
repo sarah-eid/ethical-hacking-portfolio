@@ -24,7 +24,7 @@ This portfolio documents my hands-on ethical hacking coursework, covering the fu
 
 ```
 ethical-hacking-portfolio/
-├── README.md
+├── README.md                               # This file
 ├── labs/
 │   ├── lab01-footprinting-google-dorks/
 │   │   └── lab01.md
@@ -38,9 +38,9 @@ ethical-hacking-portfolio/
 │   │   └── lab06.md + screenshots/
 │   └── lab07-password-cracking/
 │       └── lab07.md + screenshots/
-├── final-project/
-│   └── ethical-hacking-final-report.md
-└── tools-cheatsheet.md
+└── final-project/
+    └── ethical-hacking-final-report.md + screenshots/
+
 ```
 ---
 
