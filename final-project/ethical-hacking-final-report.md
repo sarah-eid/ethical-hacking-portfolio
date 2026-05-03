@@ -5,8 +5,8 @@
 **Instructor:** Dr. Sohail Khan
 
 **Team Members:**
-- Abeer Hussain (S22107714)
 - Sarah Eid (S22107757)
+- [Abeer Hussain](https://github.com/abeerahrar)
 - Nancy Elhaddad (S20206871)
 
 **Effat University, College of Engineering, Computer Science**
