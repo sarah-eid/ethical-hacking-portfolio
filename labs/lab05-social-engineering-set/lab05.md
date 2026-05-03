@@ -140,6 +140,8 @@ What happened?
 
 **_After entering credentials on the fake cloned website and clicking Login, the credentials were captured by the Social Engineer Toolkit (SET) running on the attacker's machine (10.6.6.1). The terminal output shows the captured username and password fields. The victim was then likely redirected to the real DVWA website without realizing their credentials were stolen._**
 
+![screenshot](./screenshots/Screenshot1.png)
+
 ---
 **Step 3: View the Captured Information.**
 
@@ -157,6 +159,8 @@ POSSIBLE USERNAME FIELD FOUND: user_token=69c0375a6ee98b96a5b643eed1e97f94
 
 \[\*\] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
 
+![screenshot](./screenshots/Screenshot2.png)
+
 ---
 - To save the report in XML format to use in other penetration testing applications, enter **CTRL**\-**C**. The report file name and path are returned. Select the path and filename and right-click to copy the selection.
 
@@ -165,6 +169,8 @@ Continue to enter **99** and press **enter** until you have exited setoolkit. To
 ┌──(root㉿Kali)-\[~\]
 
 └─# **cat /root/.set/reports/YOUR-FILENME**
+
+![screenshot](./screenshots/Screenshot2.png)
 
 ---
 What information did the cloned web page gather?
