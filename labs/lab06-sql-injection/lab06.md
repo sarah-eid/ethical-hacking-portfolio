@@ -5,7 +5,7 @@
 | Name:       | Sarah Eid           |           |                 |
 | Student ID: | S22107757           | Section:  | 1               |
 
-**Lab - Injection Attacks**
+**Lab 6 - Injection Attacks**
 
 **Objectives**
 
